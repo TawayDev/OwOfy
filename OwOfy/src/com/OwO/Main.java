@@ -19,19 +19,10 @@ public class Main {
 
     public static void OwOfy (){
         for (int i = 0; i < wordArray.sentenceLenght; i++) {
-            if (wordArray.sentenceDisassembled[i].equals("r")) {
-             wordArray.sentenceDisassembled[i] = "w";
-            }
-
-            if (wordArray.sentenceDisassembled[i].equals("l")) {
+            String letter = wordArray.sentenceDisassembled[i];
+            if (letter.equals("l") || letter.equals("r")) {
                 wordArray.sentenceDisassembled[i] = "w";
-            }
-
-            if (wordArray.sentenceDisassembled[i].equals("R")) {
-                wordArray.sentenceDisassembled[i] = "W";
-            }
-
-            if (wordArray.sentenceDisassembled[i].equals("L")){
+            } else if (letter.equals("L") || letter.equals("R")) {
                 wordArray.sentenceDisassembled[i] = "W";
             }
         }
